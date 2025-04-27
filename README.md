@@ -1,72 +1,65 @@
-# 🎨 I See Your True Colour Shining Through
+# I See Your True Colour Shining Through 🌈
 
-Discover your true personality colour — Red 🔥, Yellow ☀️, Green 🌿, or Blue 🌊 — through real-world scenario-based reflection.  
-This tool is inspired by *Surrounded by Idiots* by Thomas Erikson — designed to feel natural, emotional, and empowering.
+Discover your true personality colour — Red, Yellow, Green, or Blue — through real-world scenarios, not boring theoretical questions.  
+Inspired by *Surrounded by Idiots* by Thomas Erikson, this emotional reflection tool invites you to understand your instincts, behaviours, and natural energies.
 
 ---
 
 ## ✨ Features
 
 - 12 Real-Life Scenario-Based Questions
-- Hidden Colour Mapping Behind Every Answer
-- Dynamic Personalized Results
-- Strengths and Growth Opportunities for Each Colour
-- Smooth Scroll Animations (AOS)
-- Fully Responsive Mobile-First Design
-- Light, Clean, Emotional Aesthetic
+- Hidden Color Mapping (Red 🔥, Yellow ☀️, Green 🌿, Blue 🌊)
+- Personalized Result with Strengths and Growth Opportunities
+- Smooth Animations and Mobile-Responsive Design
+- Emotional, Reflective, and Empowering Tone
 
 ---
 
-## 🚀 Live Site
+## 🎯 How It Works
 
-👉 [**Click Here to Visit**](https://utsavkth.github.io/I-See-Your-True-Colour/index.html)
+- Each answer you choose secretly maps to a color.
+- At the end of the quiz, your dominant color is revealed.
+- If your top two colors are close, a secondary influence is also shown.
 
 ---
 
-## 🎨 Colour Profiles
+## 📚 Colour Profiles
 
-| Colour | Core Traits | Emoji |
-|:---|:---|:---:|
-| 🔥 Red | Bold, Decisive, Action-Oriented | 🔥 |
-| ☀️ Yellow | Playful, Energetic, Inspirational | ☀️ |
-| 🌿 Green | Calm, Loyal, Harmonious | 🌿 |
-| 🌊 Blue | Analytical, Precise, Thoughtful | 🌊 |
+| Colour  | Traits                               | Emoji |
+|:-------:|:-------------------------------------|:-----:|
+| **Red** | Bold, Decisive, Action-Oriented       | 🔥 |
+| **Yellow** | Playful, Energetic, Inspirational | ☀️ |
+| **Green** | Calm, Loyal, Harmonious            | 🌿 |
+| **Blue** | Analytical, Precise, Thoughtful     | 🌊 |
+
+---
+
+## 🚀 Live Demo
+
+Check out the live project here:  
+👉 [Visit "I See Your True Colour"](https://utsavkth.github.io/I-See-Your-True-Colour/)
 
 ---
 
 ## 🛠 Built With
 
 - HTML5
-- CSS3 (with Custom Animations)
+- CSS3 + Custom Animations
 - JavaScript (Dynamic Quiz Logic)
 - AOS (Animate On Scroll Library)
 
 ---
 
-## 📚 How It Works
-
-- Users answer 12 scenario-based questions.
-- Each answer maps secretly to one of the 4 colours.
-- At the end, users are shown their primary colour (and secondary if scores are close).
-- The result comes with detailed strengths and growth insights.
-
----
-
 ## 📬 Contact
 
-Built with ❤️ by [**Utsav Khatiwada**](https://github.com/utsavkth)
+Created with ❤️ by [Utsav](https://github.com/utsavkth)
+
+Feel free to connect on GitHub or reach out if you find this project interesting!
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 🌟 Special Thanks
-
-Inspired by the book *Surrounded by Idiots* by Thomas Erikson —  
-for making behavioural psychology simple, relatable, and powerful for everyone.
+This project is licensed under the MIT License — feel free to use, remix, and build upon it with credit.
 
 ---
