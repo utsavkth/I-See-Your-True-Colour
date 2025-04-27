@@ -1,0 +1,424 @@
+/* === Reset and Base Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #fdfdfd;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* === Universal Container === */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  
+  /* === Navbar === */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #6a0dad;
+  }
+  
+  /* === Dropdown === */
+  .more-projects {
+    position: relative;
+  }
+  
+  .more-projects .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .more-projects:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown li a {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  .dropdown li a:hover {
+    color: #6a0dad;
+  }
+  
+  /* === Hamburger for Mobile === */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* === Hero Section === */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f9e5ff, #e0f7fa);
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    color: #6a0dad;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+  }
+  
+  /* === Section Light === */
+  .section-light {
+    background: #fafafa;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .about-teaser h2 {
+    font-size: 2rem;
+    color: #6a0dad;
+    margin-bottom: 1rem;
+  }
+  
+  .about-teaser p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  /* === Buttons === */
+  .start-button, .about-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #6a0dad;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .start-button:hover, .about-button:hover {
+    background: #5400a8;
+    transform: translateY(-3px);
+  }
+  
+  /* === Form (Start Page) === */
+  .name-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .name-form input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .name-form button {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .name-form button:hover {
+    background: #5400a8;
+  }
+  
+  /* === Quiz Section === */
+  .quiz-section {
+    margin-top: 2rem;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+  
+  .quiz-section h2 {
+    font-size: 1.8rem;
+    color: #6a0dad;
+    margin-bottom: 1rem;
+  }
+  
+  .answer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .answer-buttons button {
+    padding: 0.8rem 1rem;
+    border: 2px solid #6a0dad;
+    background: transparent;
+    color: #6a0dad;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .answer-buttons button:hover {
+    background: #6a0dad;
+    color: white;
+  }
+  
+  /* === Progress Bar === */
+  .progress-container {
+    width: 100%;
+    background: #eee;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    height: 1rem;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: #6a0dad;
+    width: 0%;
+    transition: width 0.4s ease;
+  }
+  
+  /* === Footer === */
+  .footer {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* === Mobile Responsive === */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: white;
+      flex-direction: column;
+      width: 200px;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hero {
+      flex-direction: column;
+    }
+  }
+  
+  /* === Fade In Animation === */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards ease;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Kundali */
+/* Diamond-shaped Kundali Layout */
+.diamond-kundali {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  transform: rotate(45deg); /* Diamond shape */
+}
+
+/* Each triangular house - Create the shape */
+.house {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  font-size: 0.8rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.house span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Positioning of 12 houses (triangles) */
+.house-1 {
+  top: 10%;
+  left: 10%;
+  border-bottom: 100px solid #e63946; /* Red */
+}
+.house-2 {
+  top: 10%;
+  right: 10%;
+  border-bottom: 100px solid #ffcc00; /* Yellow */
+}
+.house-3 {
+  top: 30%;
+  right: 10%;
+  border-bottom: 100px solid #2a9d8f; /* Green */
+}
+.house-4 {
+  top: 50%;
+  right: 10%;
+  border-bottom: 100px solid #457b9d; /* Blue */
+}
+.house-5 {
+  top: 70%;
+  right: 10%;
+  border-bottom: 100px solid #e63946; /* Red */
+}
+.house-6 {
+  bottom: 10%;
+  left: 10%;
+  border-top: 100px solid #ffcc00; /* Yellow */
+}
+.house-7 {
+  bottom: 30%;
+  left: 10%;
+  border-top: 100px solid #2a9d8f; /* Green */
+}
+.house-8 {
+  bottom: 50%;
+  left: 10%;
+  border-top: 100px solid #457b9d; /* Blue */
+}
+.house-9 {
+  bottom: 70%;
+  left: 10%;
+  border-top: 100px solid #e63946; /* Red */
+}
+.house-10 {
+  top: 30%;
+  left: 50%;
+  border-left: 100px solid #ffcc00; /* Yellow */
+}
+.house-11 {
+  top: 50%;
+  left: 50%;
+  border-left: 100px solid #2a9d8f; /* Green */
+}
+.house-12 {
+  top: 70%;
+  left: 50%;
+  border-left: 100px solid #457b9d; /* Blue */
+}
+
+/* Center House (True Soul Kundali) */
+.center-house {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 120px;
+  height: 120px;
+  background: #f5f5f5;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+
+  

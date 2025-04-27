@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== Required Meta Tags ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start Quiz | I See Your True Colour</title>
+
+  <!-- ===== Stylesheets ===== -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- ========================= Navbar ========================= -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="view-all-colour-types.html">View All Colours</a></li>
+      <li class="more-projects">
+        <a href="#">More Projects ▼</a>
+        <ul class="dropdown">
+          <li><a href="https://utsavkth.github.io/Discover-Your-Love-Language/" target="_blank">Love Language Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Attachment-Style/" target="_blank">Attachment Style Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Sexual-Temperament/" target="_blank">Sexual Temperament Quiz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ========================= Start Quiz Section ========================= -->
+  <section class="start-quiz container" data-aos="fade-up">
+    <div class="card">
+      <!-- Soft white card starts -->
+
+      <h1>Welcome! 🌟</h1>
+      <p>Before we dive in, tell us your name —  
+      so we can make your journey personal and special ✨.</p>
+
+      <!-- ===== Name Input Form ===== -->
+      <form class="name-form" id="name-form">
+        <input 
+          type="text" 
+          id="username" 
+          placeholder="Enter your name..." 
+          required 
+        />
+        <button type="submit" class="start-button">🚀 Start the Quiz</button>
+      </form>
+
+    </div> <!-- End of Card -->
+  </section>
+
+  <!-- ========================= Footer ========================= -->
+  <footer class="footer" data-aos="fade-up">
+    <p>Made with ❤️ by Utsav © 2025</p>
+  </footer>
+
+  <!-- ========================= Scripts ========================= -->
+  <script src="navbar.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // ===== Initialize AOS Animation =====
+    AOS.init({ duration: 1000, once: true });
+
+    // ===== Handle Name Form Submission =====
+    const form = document.getElementById('name-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Get the name entered by user
+      const username = document.getElementById('username').value.trim();
+
+      if (username) {
+        // Save the name to localStorage
+        localStorage.setItem('username', username);
+
+        // Redirect to Quiz page
+        window.location.href = 'quiz.html';
+      }
+    });
+  </script>
+
+</body>
+</html>

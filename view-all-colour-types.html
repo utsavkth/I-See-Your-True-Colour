@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== Required Meta Tags ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View All Colours | I See Your True Colour</title>
+
+  <!-- ===== Stylesheets ===== -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!-- ========================= Navbar ========================= -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="start.html">Start Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="more-projects">
+        <a href="#">More Projects ▼</a>
+        <ul class="dropdown">
+          <li><a href="https://utsavkth.github.io/Discover-Your-Love-Language/" target="_blank">Love Language Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Attachment-Style/" target="_blank">Attachment Style Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Sexual-Temperament/" target="_blank">Sexual Temperament Quiz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ========================= Colour Types Section ========================= -->
+  <section class="quiz container" data-aos="fade-up">
+    <div class="card">
+      <h2>🌈 Explore All Colour Types</h2>
+      <p style="margin-top:1rem; font-size:1.1rem;">
+        Every colour represents a different way of feeling, thinking, and connecting.  
+        Discover their gifts — and what makes them light up!
+      </p>
+
+      <!-- Colour Types Grid -->
+      <div class="colour-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top:2rem;">
+        
+        <!-- Inside each colour card, after the personality description -->
+
+<!-- RED -->
+<div class="colour-card" style="text-align:center; background:#ffe5e5; padding:1.5rem; border-radius:1rem;">
+    <img src="assets/red-character.png" alt="Red Character" style="width:100%; max-width:200px; margin: 0 auto; border-radius:1rem;">
+    <h3 style="color: #e63946; margin-top:1rem;">Red — The Bold Leader</h3>
+    <p><strong>Fictional Example:</strong> Rick Sanchez (Rick and Morty)</p>
+    <p><strong>Positive Traits:</strong> Bold, Decisive, Passionate</p>
+    <p><strong>Negative Traits:</strong> Impatient, Stubborn, Aggressive</p>
+    <p><strong>How to Make Them Happy:</strong> Challenge them. Respect their leadership.</p>
+    <p><strong>How to Annoy Them:</strong> Micromanage them. Waste their time. Ignore their ideas.</p>
+  
+    <!-- Learn More Button -->
+    <button onclick="window.location.href='red.html';" class="start-button" style="margin-top:1rem;">❤️ Learn More About Red ➡️</button>
+  </div>
+  
+  <!-- YELLOW -->
+  <div class="colour-card" style="text-align:center; background:#fff7d1; padding:1.5rem; border-radius:1rem;">
+    <img src="assets/yellow-character.png" alt="Yellow Character" style="width:100%; max-width:200px; margin: 0 auto; border-radius:1rem;">
+    <h3 style="color: #ffcc00; margin-top:1rem;">Yellow — The Optimistic Creator</h3>
+    <p><strong>Fictional Example:</strong> SpongeBob SquarePants</p>
+    <p><strong>Positive Traits:</strong> Energetic, Optimistic, Fun-loving</p>
+    <p><strong>Negative Traits:</strong> Distractible, Over-talkative, Impulsive</p>
+    <p><strong>How to Make Them Happy:</strong> Laugh with them. Encourage their dreams.</p>
+    <p><strong>How to Annoy Them:</strong> Shut down their ideas. Act gloomy or overly serious.</p>
+  
+    <!-- Learn More Button -->
+    <button onclick="window.location.href='yellow.html';" class="start-button" style="margin-top:1rem;">💛 Learn More About Yellow ➡️</button>
+  </div>
+  
+  <!-- GREEN -->
+  <div class="colour-card" style="text-align:center; background:#e5f8ef; padding:1.5rem; border-radius:1rem;">
+    <img src="assets/green-character.png" alt="Green Character" style="width:100%; max-width:200px; margin: 0 auto; border-radius:1rem;">
+    <h3 style="color: #2a9d8f; margin-top:1rem;">Green — The Calm Harmonizer</h3>
+    <p><strong>Fictional Example:</strong> Samwise Gamgee (Lord of the Rings)</p>
+    <p><strong>Positive Traits:</strong> Loyal, Supportive, Compassionate</p>
+    <p><strong>Negative Traits:</strong> Conflict-avoidant, Stubbornly passive, Over-cautious</p>
+    <p><strong>How to Make Them Happy:</strong> Appreciate their loyalty. Create safe emotional spaces.</p>
+    <p><strong>How to Annoy Them:</strong> Force sudden changes. Disrespect their boundaries.</p>
+  
+    <!-- Learn More Button -->
+    <button onclick="window.location.href='green.html';" class="start-button" style="margin-top:1rem;">💚 Learn More About Green ➡️</button>
+  </div>
+  
+  <!-- BLUE -->
+  <div class="colour-card" style="text-align:center; background:#e5f0ff; padding:1.5rem; border-radius:1rem;">
+    <img src="assets/blue-character.png" alt="Blue Character" style="width:100%; max-width:200px; margin: 0 auto; border-radius:1rem;">
+    <h3 style="color: #457b9d; margin-top:1rem;">Blue — The Thoughtful Strategist</h3>
+    <p><strong>Fictional Example:</strong> Sherlock Holmes</p>
+    <p><strong>Positive Traits:</strong> Analytical, Precise, Insightful</p>
+    <p><strong>Negative Traits:</strong> Overcritical, Emotionally detached, Overthinking</p>
+    <p><strong>How to Make Them Happy:</strong> Respect their ideas. Give them space to think.</p>
+    <p><strong>How to Annoy Them:</strong> Interrupt them. Pressure them emotionally without logic.</p>
+  
+    <!-- Learn More Button -->
+    <button onclick="window.location.href='blue.html';" class="start-button" style="margin-top:1rem;">💙 Learn More About Blue ➡️</button>
+  </div>
+  
+
+      </div>
+
+      <!-- Back to Home Button -->
+      <button onclick="window.location.href='index.html';" class="start-button" style="margin-top:3rem;">🏠 Back to Home</button>
+
+    </div>
+  </section>
+
+  <!-- ========================= Footer ========================= -->
+  <footer class="footer" data-aos="fade-up">
+    <p>Made with ❤️ by Utsav © 2025</p>
+  </footer>
+
+  <!-- ========================= Scripts ========================= -->
+  <script src="navbar.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+</html>

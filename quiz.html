@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===== Required Meta Tags ===== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz | I See Your True Colour</title>
+
+  <!-- ===== Stylesheets ===== -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- ===== Confetti Library for Fireworks ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ========================= Navbar ========================= -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="view-all-colour-types.html">View All Colours</a></li>
+      <li class="more-projects">
+        <a href="#">More Projects ▼</a>
+        <ul class="dropdown">
+          <li><a href="https://utsavkth.github.io/Discover-Your-Love-Language/" target="_blank">Love Language Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Attachment-Style/" target="_blank">Attachment Style Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Sexual-Temperament/" target="_blank">Sexual Temperament Quiz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ========================= Quiz Section ========================= -->
+  <section class="quiz container" data-aos="fade-up">
+    <div class="card">
+      <!-- ===== Progress Bar ===== -->
+      <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- ===== Question Area ===== -->
+      <div id="quiz-content" class="quiz-section">
+        <h2 id="question">Loading question...</h2>
+
+        <!-- Answer Buttons -->
+        <div id="answer-buttons" class="answer-buttons"></div>
+
+        <!-- Motivational Line -->
+        <p id="motivational-line" style="margin-top:2rem; font-weight:600;"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= Footer ========================= -->
+  <footer class="footer" data-aos="fade-up">
+    <p>Made with ❤️ by Utsav © 2025</p>
+  </footer>
+
+  <!-- ========================= Scripts ========================= -->
+  <script src="navbar.js"></script>
+  <script src="quiz.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // ===== Initialize AOS Animation =====
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your True Colour | Life Map</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ========================= Navbar ========================= -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="start.html">Start Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="view-all-colour-types.html">View All Colours</a></li>
+      <li class="more-projects">
+        <a href="#">More Projects ▼</a>
+        <ul class="dropdown">
+          <li><a href="https://utsavkth.github.io/Discover-Your-Love-Language/" target="_blank">Love Language Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Attachment-Style/" target="_blank">Attachment Style Quiz</a></li>
+          <li><a href="https://utsavkth.github.io/Discover-Your-Sexual-Temperament/" target="_blank">Sexual Temperament Quiz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ========================= Soul Map Section ========================= -->
+  <section class="quiz container" data-aos="fade-up">
+    <div class="card">
+      <h2 id="soulGreeting" style="margin-top: 1rem;">Loading your soul map...</h2>
+
+      <h1 id="colourResult" style="margin-top:2rem;">Your True Colour Is:</h1>
+
+      <div id="soulSections" style="margin-top:2rem;">
+        <!-- Strengths / Challenges / Growth / Blessing -->
+      </div>
+
+      <!-- Real Diamond Kundali -->
+      <div class="diamond-kundali" id="kundaliChart" style="margin-top:3rem;">
+        <div class="house house-6" id="house6"></div>
+        <div class="house house-5" id="house5"></div>
+        <div class="house house-4" id="house4"></div>
+        <div class="house house-7" id="house7"></div>
+        <div class="house center-house" id="center">🪐 True Soul Kundali</div>
+        <div class="house house-3" id="house3"></div>
+        <div class="house house-8" id="house8"></div>
+        <div class="house house-9" id="house9"></div>
+        <div class="house house-2" id="house2"></div>
+        <div class="house house-11" id="house11"></div>
+        <div class="house house-10" id="house10"></div>
+        <div class="house house-1" id="house1"></div>
+      </div>
+
+      <!-- Buttons -->
+      <div style="margin-top:2rem;">
+        <button onclick="copyLink()" class="start-button" style="margin:0.5rem;">🔗 Share Your Life Map</button>
+        <button onclick="restartQuiz()" class="start-button" style="margin:0.5rem;">🔄 Restart Quiz</button>
+        <button onclick="window.location.href='view-all-colour-types.html';" class="start-button" style="margin:0.5rem;">🌈 Explore Other Colours</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer" data-aos="fade-up">
+    <p>Made with ❤️ by Utsav © 2025</p>
+  </footer>
+
+  <script src="navbar.js"></script>
+  <script src="result.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+
+</body>
+</html>
