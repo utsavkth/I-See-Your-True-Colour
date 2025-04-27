@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Your Colour | I See Your True Colour</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Animate On Scroll Library (for smooth scroll animations) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+      </a>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="colours.html">Discover Your Colour</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Quiz Section -->
+  <section class="quiz" id="quiz" data-aos="fade-up">
+    <h1>Discover Your True Colour 🌈</h1>
+
+    <div id="question-container" class="question-container">
+      <!-- Question text will go here dynamically -->
+      <h2 id="question">Loading question...</h2>
+
+      <!-- Answer buttons will go here dynamically -->
+      <div id="answer-buttons" class="answer-buttons"></div>
+    </div>
+
+    <div id="result-container" class="result-container" style="display:none;" data-aos="fade-up">
+      <h2 id="result-title"></h2>
+      <p id="result-description"></p>
+      <a href="colours.html" class="start-button">🔄 Retake the Quiz</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <p>Made with ❤️ by Utsav © 2025</p>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+
+  <!-- Animate on Scroll Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

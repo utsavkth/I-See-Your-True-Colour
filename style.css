@@ -1,0 +1,222 @@
+/* === Reset and Base Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #fdfdfd;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* === Navbar === */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #6a0dad;
+  }
+  
+  /* === Hamburger Menu (Mobile) === */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* === Hero Section === */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f9e5ff, #e0f7fa);
+    text-align: center;
+  }
+  
+  .hero-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: #6a0dad;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .start-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #6a0dad;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .start-button:hover {
+    background: #5400a8;
+    transform: translateY(-3px);
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+  }
+  
+  /* === About Teaser Section === */
+  .about-teaser {
+    background: #fafafa;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .about-teaser h2 {
+    font-size: 2rem;
+    color: #6a0dad;
+    margin-bottom: 1rem;
+  }
+  
+  .about-teaser p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #555;
+  }
+  
+  .about-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #6a0dad;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .about-button:hover {
+    background: #5400a8;
+    transform: translateY(-3px);
+  }
+  
+  /* === Footer === */
+  .footer {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* === Responsive Design === */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: white;
+      width: 200px;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hero {
+      flex-direction: column;
+      padding: 3rem 1.5rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-image img {
+      max-width: 300px;
+    }
+  
+    .about-teaser {
+      padding: 3rem 1.5rem;
+    }
+  }
+
+  /* === Fade In Animation === */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+    
