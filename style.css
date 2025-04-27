@@ -19,6 +19,7 @@
     flex-direction: column;
   }
   
+<<<<<<< HEAD
   /* === Universal Container === */
   .container {
     max-width: 1100px;
@@ -26,6 +27,8 @@
     padding: 2rem 1.5rem;
   }
   
+=======
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   /* === Navbar === */
   .navbar {
     display: flex;
@@ -33,10 +36,17 @@
     align-items: center;
     background: white;
     padding: 1rem 2rem;
+<<<<<<< HEAD
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
+=======
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   }
   
   .logo {
@@ -46,8 +56,12 @@
   .nav-links {
     display: flex;
     list-style: none;
+<<<<<<< HEAD
     gap: 1.5rem;
     align-items: center;
+=======
+    gap: 2rem;
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   }
   
   .nav-links a {
@@ -61,6 +75,7 @@
     color: #6a0dad;
   }
   
+<<<<<<< HEAD
   /* === Dropdown === */
   .more-projects {
     position: relative;
@@ -96,6 +111,9 @@
   }
   
   /* === Hamburger for Mobile === */
+=======
+  /* === Hamburger Menu (Mobile) === */
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   .hamburger {
     display: none;
     font-size: 2rem;
@@ -108,6 +126,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     text-align: center;
     gap: 2rem;
     padding: 4rem 2rem;
@@ -118,27 +137,73 @@
   
   .hero-content h1 {
     font-size: 2.8rem;
+=======
+    gap: 3rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f9e5ff, #e0f7fa);
+    text-align: center;
+  }
+  
+  .hero-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
     color: #6a0dad;
     margin-bottom: 1rem;
   }
   
   .hero-content p {
     font-size: 1.1rem;
+<<<<<<< HEAD
     color: #555;
   }
   
+=======
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .start-button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #6a0dad;
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .start-button:hover {
+    background: #5400a8;
+    transform: translateY(-3px);
+  }
+  
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   .hero-image img {
     width: 100%;
     max-width: 400px;
     border-radius: 1rem;
   }
   
+<<<<<<< HEAD
   /* === Section Light === */
   .section-light {
     background: #fafafa;
     border-radius: 1rem;
     margin-top: 2rem;
     padding: 3rem 2rem;
+=======
+  /* === About Teaser Section === */
+  .about-teaser {
+    background: #fafafa;
+    padding: 4rem 2rem;
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
     text-align: center;
   }
   
@@ -152,12 +217,20 @@
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 2rem;
+<<<<<<< HEAD
   }
   
   /* === Buttons === */
   .start-button, .about-button {
     display: inline-block;
     margin-top: 1rem;
+=======
+    color: #555;
+  }
+  
+  .about-button {
+    display: inline-block;
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
     padding: 0.75rem 1.5rem;
     background: #6a0dad;
     color: white;
@@ -167,11 +240,16 @@
     transition: background 0.3s, transform 0.3s;
   }
   
+<<<<<<< HEAD
   .start-button:hover, .about-button:hover {
+=======
+  .about-button:hover {
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
     background: #5400a8;
     transform: translateY(-3px);
   }
   
+<<<<<<< HEAD
   /* === Form (Start Page) === */
   .name-form {
     display: flex;
@@ -256,6 +334,8 @@
     transition: width 0.4s ease;
   }
   
+=======
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   /* === Footer === */
   .footer {
     background: #f0f0f0;
@@ -269,18 +349,30 @@
     font-size: 0.9rem;
   }
   
+<<<<<<< HEAD
   /* === Mobile Responsive === */
+=======
+  /* === Responsive Design === */
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
   @media (max-width: 768px) {
     .nav-links {
       position: absolute;
       top: 70px;
       right: 0;
       background: white;
+<<<<<<< HEAD
       flex-direction: column;
       width: 200px;
       align-items: center;
       padding: 1rem;
       gap: 1rem;
+=======
+      width: 200px;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1.5rem;
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       display: none;
     }
@@ -295,6 +387,7 @@
   
     .hero {
       flex-direction: column;
+<<<<<<< HEAD
     }
   }
   
@@ -305,11 +398,41 @@
   }
   
   @keyframes fadeIn {
+=======
+      padding: 3rem 1.5rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-image img {
+      max-width: 300px;
+    }
+  
+    .about-teaser {
+      padding: 3rem 1.5rem;
+    }
+  }
+
+  /* === Fade In Animation === */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
+<<<<<<< HEAD
 
 /* Kundali */
 /* Diamond-shaped Kundali Layout */
@@ -422,3 +545,6 @@
 
 
   
+=======
+    
+>>>>>>> 92b51dc32763d86e6aedfe526e45e8fb8638b59d
