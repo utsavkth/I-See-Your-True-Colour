@@ -1,5 +1,5 @@
 // =========================
-// Result Page Logic - Kundali Style
+// Result Page Logic - Kundali Style (Utsav Final)
 // =========================
 
 // ===== Variables =====
@@ -64,7 +64,33 @@ if (colorScores) {
 
   soulSections.innerHTML = soulStory;
 
-  // Populate the 12 houses dynamically
+  // ===== ADD Learn More Button (NEW) =====
+  const colorLinks = {
+    "Red": "red.html",
+    "Yellow": "yellow.html",
+    "Green": "green.html",
+    "Blue": "blue.html"
+  };
+
+  soulSections.innerHTML += `
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="${colorLinks[finalColour]}" class="start-button">🔎 Learn More About Your Colour →</a>
+    </div>
+  `;
+
+  // ===== ADD Diamond Creation Message (NEW) =====
+  kundaliChart.insertAdjacentHTML('beforebegin', `
+    <div style="text-align:center; margin-top:2rem; font-style:italic; color:#555;">
+      🚧 LOOK AWAY! 🚧<br/>
+      "Diamonds are formed deep within the crust.<br/>
+      They take a long time to reveal their brilliance.<br/>
+      What you see now may look messy —<br/>
+      but that's only because your 3D brain cannot comprehend a 5D creation."<br/>
+      ✌🏼Peace.✌🏼
+    </div>
+  `);
+
+  // ===== Populate the 12 Houses Dynamically =====
   populateKundaliContent(finalColour);
 
 } else {
