@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ===== Required Meta Tags ===== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your True Colour | Life Map</title>
 
+  <!-- ===== Stylesheets ===== -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- ===== html2canvas Library for Screenshot ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- ===== Confetti Library ===== -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 
@@ -20,23 +27,15 @@
         <img src="assets/logo.png" alt="Logo" class="logo" />
       </a>
     </div>
-  
+
     <div class="hamburger" id="hamburger">&#9776;</div>
-  
+
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">🏠 Home</a></li>
       <li><a href="about.html">📖 About</a></li>
       <li><a href="start.html">🚀 Start Quiz</a></li>
       <li><a href="contact.html">✉️ Contact</a></li>
       <li><a href="view-all-colour-types.html">🌈 View All Colours</a></li>
-      <li class="more-projects">
-        <a href="#">✨ More Projects ▼</a>
-        <ul class="dropdown">
-          <li><a href="https://utsavkth.github.io/Discover-Your-Love-Language/" target="_blank">💌 Discover Your Love Language</a></li>
-          <li><a href="https://utsavkth.github.io/Discover-Your-Attachment-Style/" target="_blank">🔗 Discover Your Attachment Style</a></li>
-          <li><a href="https://utsavkth.github.io/Discover-Your-Sexual-Temperament/" target="_blank">🧠 Discover Your Sexual Temperament</a></li>
-        </ul>
-      </li>
     </ul>
   </nav>
 
@@ -51,8 +50,7 @@
         <!-- Strengths / Challenges / Growth / Blessing -->
       </div>
 
-
-      <!-- Real Diamond Kundali -->
+      <!-- Diamond Kundali Layout -->
       <div class="diamond-kundali" id="kundaliChart" style="margin-top:3rem;">
         <div class="house house-6" id="house6"></div>
         <div class="house house-5" id="house5"></div>
@@ -68,9 +66,9 @@
         <div class="house house-1" id="house1"></div>
       </div>
 
-      <!-- Buttons -->
+      <!-- Share/Download/Restart Buttons -->
       <div style="margin-top:2rem;">
-        <button onclick="copyLink()" class="start-button" style="margin:0.5rem;">🔗 Share Your Life Map</button>
+        <button onclick="downloadScreenshot()" class="start-button" style="margin:0.5rem;">🔗 Share Your Result</button>
         <button onclick="restartQuiz()" class="start-button" style="margin:0.5rem;">🔄 Restart Quiz</button>
         <button onclick="window.location.href='view-all-colour-types.html';" class="start-button" style="margin:0.5rem;">🌈 Explore Other Colours</button>
       </div>
@@ -78,10 +76,12 @@
     </div>
   </section>
 
+  <!-- ========================= Footer ========================= -->
   <footer class="footer" data-aos="fade-up">
-    <p>Inspired by "Surrounded by Idiots". Built when surrounded by idiots. 😄<br/>You, who’s reading this — you are not one of them.</p>
+    <p>Inspired by "Surrounded by Idiots". Built when surrounded by idiots. 😄<br/>You, who’s reading this — you are not one of them. 🚀</p>
   </footer>
 
+  <!-- ========================= Scripts ========================= -->
   <script src="navbar.js"></script>
   <script src="result.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

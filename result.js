@@ -64,7 +64,7 @@ if (colorScores) {
 
   soulSections.innerHTML = soulStory;
 
-  // ===== ADD Learn More Button (NEW) =====
+  // ===== Learn More Button =====
   const colorLinks = {
     "Red": "red.html",
     "Yellow": "yellow.html",
@@ -78,19 +78,19 @@ if (colorScores) {
     </div>
   `;
 
-  // ===== ADD Diamond Creation Message (NEW) =====
+  // ===== Diamond Message =====
   kundaliChart.insertAdjacentHTML('beforebegin', `
     <div style="text-align:center; margin-top:2rem; font-style:italic; color:#555;">
       🚧 LOOK AWAY! 🚧<br/>
       "Diamonds are formed deep within the crust.<br/>
       They take a long time to reveal their brilliance.<br/>
       What you see now may look messy —<br/>
-      but that's only because your 3D brain cannot comprehend a 5D creation."<br/>
-      ✌🏼Peace.✌🏼
+      but that's only because your 3D brain cannot comprehend a 5D creation.<br/>
+      🌌 Peace. 🌌"
     </div>
   `);
 
-  // ===== Populate the 12 Houses Dynamically =====
+  // ===== Populate Kundali Houses =====
   populateKundaliContent(finalColour);
 
 } else {
@@ -98,6 +98,7 @@ if (colorScores) {
   soulSections.innerHTML = "<p>We couldn't find your energy map. Please retake the journey!</p>";
 }
 
+// ===== Function: Fill Kundali Houses =====
 function populateKundaliContent(color) {
   const houses = {
     Red: [
@@ -169,10 +170,15 @@ function populateKundaliContent(color) {
   });
 }
 
-// ===== Share Link =====
-function copyLink() {
-  navigator.clipboard.writeText(window.location.href);
-  alert("Link copied to clipboard! 📋 Share your Soul Map!");
+// ===== Function: Download Screenshot as Sharing =====
+function downloadScreenshot() {
+  const resultSection = document.querySelector('.quiz');
+  html2canvas(resultSection, { scale: 2 }).then((canvas) => {
+    const link = document.createElement('a');
+    link.download = 'your-true-colour-life-map.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  });
 }
 
 // ===== Restart Quiz =====
