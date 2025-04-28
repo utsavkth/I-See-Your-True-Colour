@@ -40,8 +40,11 @@
   }
   
   .logo {
-    height: 50px;
+    height: 80px; /* was 50px */
+    max-width: 100%;
+    display: block;
   }
+  
   
   .nav-links {
     display: flex;
